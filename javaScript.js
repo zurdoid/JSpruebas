@@ -53,7 +53,7 @@ console.log(interesesSplit);
 
 
 // replace para cambiar algo del texto
-let interReplace = intereses. replace ('caminar', 'irme de pedo');
+let interReplace = intereses.replace('caminar', 'irme de pedo');
 console.log(interReplace);
 
 // include para verificar que exista dentro del texto
@@ -62,4 +62,12 @@ comprobacion = correo.includes('@');
 console.log(comprobacion);
 
 
+
+// -------------NUMEROS--------------
+
+const numero1,
+      numero2,
+      numero3,
+      numero4,
+      numero5;
 
