@@ -64,10 +64,15 @@ console.log(comprobacion);
 
 
 // -------------NUMEROS--------------
+var numero2 = 1;
 
-const numero1,
-      numero2,
-      numero3,
-      numero4,
-      numero5;
+var resultado = Math.round(2.5);
 
+    resultado = Math.abs(numero2++);
+
+    console.log(resultado);
+
+    console.clear();
+
+    resultado = new Date();
+    console.log(new Date);
