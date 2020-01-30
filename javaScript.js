@@ -151,7 +151,7 @@ var resultado = Math.round(2.5);
 
     // ------------------------------OBJETOS-----------------------------------
 
-    
+    // ---------- Object Literal -------------- +++es un poco mas estático, abajo viene un ejemplo del object constructor y es mas similar a la escritura de Java 
     const persona = {
         nombre: 'Damian',
         apellido: 'ID',
@@ -205,5 +205,161 @@ var resultado = Math.round(2.5);
 
     
 
+    // ---------------- Object Constructor ------------- this (es como el tipo de formato, una nueva hoja que se crea pero respeta las caracteristicas que se especifican)
+    //el nombre de la función comienza con MAYUSCULA
+    function Tarea(nombre, urgencia){
+        this.nombre = nombre;
+        this.urgencia = urgencia;
+    }
+
+    //la tarea de color verde empieza con MAYUS igual que el nombre de la función
+    const tarea1 = new Tarea('Aprender JavaScript', 'Urgente');
+    const tarea2 = new Tarea('Preparar Café', 'Urgente');
+    const tarea3 = new Tarea('Jugar Ping Pong', 'Medio');
+    const tarea4 = new Tarea('Hacer Dinero', 'URGENTE');
+
+    console.log(tarea1);
+    console.log(tarea2);
+    console.log(tarea3);
+    console.log(tarea4);
 
 
+
+    //------------ FECHAS--------------
+
+    const diaHoy = new Date();
+
+    let valor = diaHoy;
+//muestra el numero del mes. ENERO = 0
+    valor = diaHoy.getMonth();
+
+//muestra el dia. DOMINGO = 0
+    valor = diaHoy.getDay();
+
+//retorna el numero del dia del mes
+    valor = diaHoy.getDate();
+//año actual
+    valor = diaHoy.getFullYear();
+//minutos
+    valor = diaHoy.getMinutes();
+//horas
+    valor = diaHoy.getHours();
+
+
+    console.log(valor);
+
+
+
+    //-------------------------CONDICIONALES-----------------------
+
+    const puntaje = 1000;
+//triple signo de igual verifica el valor y el tipo de dato, con solo 2 == solo verifica el valor
+    if(puntaje === 1001){
+        console.log('Si es igual');
+    }else{
+        console.log('No aplica');
+    }
+
+
+    const logueado = true;
+
+    if(logueado){
+        console.log('Si estas Logueado');
+    }else{
+        console.log('No iniciaste');
+    }
+
+    // menor < que ------- mayor > que ------ !== DIFERENTE -------- >= mayor o igual ---------menor o igual <=
+
+    //ELSE IF ES UN "SINO"
+
+    //operadores (|| == or) se usa para que se cumpla o una u otra condicion    (&& == and) se usan para que se cumplan dos condiciones 
+
+    
+    
+    
+    
+    // switch
+
+    const metodoPago = 'tarje';
+
+    switch(metodoPago){
+        case 'efectivo':
+            console.log(`pagaste con ${metodoPago}`);
+            break;
+        case 'cheque':
+            console.log(`pagaste con ${metodoPago}`);
+            break;
+        case 'tarjeta':
+            console.log(`pagaste con ${metodoPago}`);
+            break;
+       default:
+            console.log('metodo de pago no valido');
+    }
+    
+
+    //------------------------loops-----------------------------
+
+
+    for(let i=0; i<10; i++){
+        console.log(`Numero: ${i}`);
+    }
+    
+
+    //---------------ej2 de loop FOR------------------
+
+
+    const carrito = ['chela', 'cigarros', 'basuru'];
+        
+    for(let i=0; i< carrito.length; i++){
+        console.log(`Los productos que agregaste a tu carrito son: ${carrito[i]}`);
+    }
+
+
+
+    //while-----------------
+//la condición es evaluada antes de ejecutar el código
+
+let x = 0;
+
+while(x<10){
+    console.log(`Número ${x}`);
+    x++;
+}
+
+
+//--------------DO WHILE
+//ejecuta almenos una vez. digamos como nuestra variable es =11, no deberia funcionar por la condición, pero el while primero ejecuta y despues evalua
+//por lo tanto imprime el valor
+
+
+let i=11;
+do{
+    console.log(i);
+    i++;
+}while(i<10);
+
+
+// -----------------------otros iteradores de Js
+
+//ARREGLO
+const pendientes = ['tarea', 'comer', 'fumar', 'beber', 'dormir'];
+//ARREGLO CON OBJETOS
+const carrito2 = [
+    {id: 1, producto: 'libro'},
+    {id: 2, producto: 'camisa'},
+    {id: 3, producto: 'disco'}
+];
+
+//OBJETO
+let automovil = {
+    modelo: 2019,
+    marca: 'chevrolet',
+    color: 'rojo'
+}
+
+for(let q=0; q<pendientes.length; q++){
+    console.log(pendientes[q]);
+}
+
+    
