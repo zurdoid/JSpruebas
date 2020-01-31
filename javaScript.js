@@ -1,4 +1,4 @@
-document.getElementById('mensaje').innerHTML = 'mi nombre es Damian';
+/*document.getElementById('mensaje').innerHTML = 'mi nombre es Damian';
 
 var nombre,
     trabajo,
@@ -172,7 +172,7 @@ var resultado = Math.round(2.5);
      console.log(persona);
         console.log(persona['nombre']);
      console.clear();
-    // ***//se pueden meter objetos y arreglos dentro del mismo objeto
+    // ***se pueden meter objetos y arreglos dentro del mismo objeto
 
 
     //+++++++++Template Strings++++++++++++
@@ -340,6 +340,13 @@ do{
 }while(i<10);
 
 
+
+*/
+
+
+
+
+/*
 // -----------------------otros iteradores de Js
 
 //ARREGLO
@@ -362,4 +369,67 @@ for(let q=0; q<pendientes.length; q++){
     console.log(pendientes[q]);
 }
 
+    //----------otra manera de escribir el ciclo FOR en JS
+    //----------crea una variable automaticamente para poder imprimirs
+    for(varCreada of pendientes){
+        console.log(varCreada);
+    }
+
+
+    for(varCreada of carrito2){
+        console.log(varCreada); //-------- imprime arreglo con obj dentro 
+        console.log(varCreada.producto); //------- imprime los objetos directamente
+    }
+
+
+
+    for(varCreada1 of  Object.values(automovil)){ //para imprimir los valores de el objeto 
+        console. log(varCreada1);
+    }
+
+    //-------------------FOR each------------------
+    pendientes.forEach(function (loquesea) { // -- creas una variable y entra a todo el arreglo 
+        console.log(loquesea);
+    })
+
     
+    //-------------------FOR each------------------
+    pendientes.forEach(loquesea => { // -- LO mismo pero con arrow function
+        console.log(loquesea);
+    })
+
+        //-------------------MAP------------------
+        pendientes.map(loquesea => { // -- crea una copia de lo que esta recibiendo
+            console.log(loquesea);
+        })
+
+
+
+//para usar for each y map pero con Objects
+
+        Object.values(automovil).forEach(tarea =>{
+           console.log(tarea);
+        })
+        
+        //para usar for each y map pero con Objects y entrar a las LLAVES
+
+        Object.keys(automovil).forEach(tarea2 =>{
+            console.log(tarea2);
+        })
+
+
+
+        */
+
+
+
+const cliente = {
+    nombre: 'Alex',
+    cuenta: 'Premium'
+}
+
+console.log(cliente);
+
+//crear la variable
+
+const nombreCliente = cliente.nombre;
