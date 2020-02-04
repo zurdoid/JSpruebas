@@ -420,16 +420,80 @@ for(let q=0; q<pendientes.length; q++){
 
 
         */
-
-
+            //-----------------Object destructuring-----------------------
 
 const cliente = {
     nombre: 'Alex',
-    cuenta: 'Premium'
+    tipo: 'Premium',
+    datos: {
+        ubicacion: {
+        ciudad: 'México',
+        edad: 25,
+        sexo: 'Masculino'
+    },
+    cuenta: {
+        desde: '18-10-12',
+        saldo: 4000
+    } 
+}
 }
 
-console.log(cliente);
+//la manera viejita de hacerlo
+const ubicacionCliente = cliente.datos.ubicacion.edad;
+console.log(ubicacionCliente);
 
-//crear la variable
 
-const nombreCliente = cliente.nombre;
+
+
+//la manera nueva (object destructuring)------ es mas facil sacar datos 
+let {datos: {ubicacion: {edad}}} = cliente;
+//es entrar en datos, ubicacion, edad de CLIENTE
+console.log(edad);
+
+let {datos: {cuenta: {saldo}}} = cliente;
+console.log(saldo);
+
+//-------------object literal enhacement
+
+const banda = 'Metallica',
+      genero = 'rock',
+      canciones = ['bla', 'bla bla', 'bla bla bla'];
+
+const metallica = {banda, genero, canciones}
+      console.log(metallica);
+
+
+      //--------------------- .filter   .find   .reduce----------------------
+
+      const personas = [
+          {nombre: 'Peter', edad: 20 },
+          {nombre: 'juan', edad: 50 },
+          {nombre: 'Ana', edad: 23 },
+          {nombre: 'Oso', edad: 28, curso: 'JS', ingreso: 1995},
+          {nombre: 'Fer', edad: 33 }
+      ];
+
+      console.table(personas);
+
+      //obtener las personas mayores a 25 años
+      const mayores = personas.filter(perso => perso.edad > 25);
+      console.log(mayores);
+
+
+      //extraer informacion de oso
+
+      const infoPersona = personas.find(perso => perso.nombre === 'Oso');
+      console.log(infoPersona);
+
+      //para imprimir el curso que esta tomando la persona de arriba 
+      let {curso} = infoPersona;
+      console.log(curso);
+
+
+      // reduce
+
+      let total = personas.reduce((edadTotal, persona)=>{
+          return edadTotal + persona.edad;
+      }, 0);
+      console.log(total);
+
