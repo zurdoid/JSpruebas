@@ -1,0 +1,195 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #f1f1f1;
+}
+/*+++++++++++GLOBALES+++++++++++++++*/
+.encabezado{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006fd6+0,004b84+53,004b84+53,0060b4+98,006fd6+98 */
+    background: #006fd6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #006fd6 0%, #004b84 53%, #004b84 53%, #0060b4 98%, #006fd6 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006fd6', endColorstr='#006fd6',GradientType=0 ); /* IE6-9 */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.empresa{
+    display: flex;
+    align-items: baseline;  
+}
+.empresa h2{
+    color: #f1f1f1;
+    font-family: 'Italianno', cursive;
+    font-size: 80px;
+    padding-left: 15px;
+}
+@media (max-width: 768px){
+    .empresa h2{
+        font-size: 50px;
+        margin-top: 20px;
+    } 
+    .encabezado img{
+        display: none;
+    }
+    .encabezado{
+        padding: 0px;
+        align-items: center;
+    }
+}
+.encabezado img{
+    max-width: 15%;
+    border-radius: 8px;   
+}
+.sesion{
+    line-height: 14px;
+    color: #f1f1f1;
+}
+/*---------header-----------*/
+.buscador{
+    margin-top: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.219) ;
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+.buscador ul li{
+    list-style: none;
+}
+.buscador ul li label{
+    display: block;
+    text-align: center;
+}
+.buscador ul li input{
+    display: block;
+    text-align: center;
+}
+.buscador ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+.bt-buscar{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 90px;
+    text-align: center;
+}
+/*---------------- BUSCADOR ALTERNO---------------
+.buscador{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.buscador ul li label{
+    text-align: center;
+    width: 120px;
+}
+.buscador ul li input{
+    text-align: center;
+    width: 210px;
+}
+.buscador ul li{
+    list-style: none;
+}
+.bt-buscar{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 90px;
+    text-align: center;
+}
+---------------- BUSCADOR ALTERNO---------------*/
+.bd-example{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.img-carousel{
+    height: 600px;
+}
+.carousel-caption{
+    background-color: rgba(15, 15, 15, 0.514);
+    max-width: 40%;
+    margin: 0 auto;
+}
+/*------------------------carousel------------------------*/
+.titulo-tarjetero{
+    text-align: center;
+    padding: 25px;
+}
+.tarjetero{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+.tarjeta{
+    margin-bottom: 30px; 
+    border: solid 1px #05243b44;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all .3s ease;
+}
+.tarjeta:hover{/*-----para dar efecto a la tarjeta, JUNTO CON EL TRANSITION de arriba----*/
+    transform: scale(1.05);
+    border: solid 2px #006fd6;
+    box-shadow: 0px 0px 50px #666;
+}
+.encabezado-tarjeta{
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dir-id{
+    color: #000000;
+}
+.dir-id:hover{
+    text-decoration: none;
+}
+.contenido-tarjeta p{
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.img-tarjeta {
+    display: block;
+    width: 100%;
+    height: 250px;
+    
+}
+.contenido-tarjeta ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenido-tarjeta ul li{
+    display: flex;
+}
+.contenido-tarjeta ul li img{
+    padding-right: 10px;
+}
+.contenido-tarjeta .btn{
+    float: right;
+    margin: 30px 20px 0 0;
+    margin-bottom: 10px;
+}
+/*-----------------------TARJETAS---------------*/
+footer{
+    height: 200px;
+    background-color: rgb(66, 79, 83);
+    margin-top: 25px;
+}
+footer p{
+    color: #ffffff;
+    float: right;
+    padding: 150px 60px 0 0;
+}

@@ -1,0 +1,230 @@
+body{
+    background-color: #f1f1f1;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.encabezado{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006fd6+0,004b84+53,004b84+53,0060b4+98,006fd6+98 */
+    background: #006fd6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #006fd6 0%, #004b84 53%, #004b84 53%, #0060b4 98%, #006fd6 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006fd6', endColorstr='#006fd6',GradientType=0 ); /* IE6-9 */
+    
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.info-encabezado{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+.empresa h2{
+    color: #f1f1f1;
+    font-family: 'Italianno', cursive;
+    font-size: 55px;
+    padding-left: 15px;
+}
+.empresa h2 span{
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .empresa h2{
+        font-size: 50px;
+        margin-top: 20px;
+    } 
+    .encabezado img{
+        display: none;
+    }
+    .encabezado{
+        padding: 0px;
+        align-items: center;
+    }
+
+}
+
+.encabezado img{
+    max-width: 15%;
+    border-radius: 8px;
+    
+    
+}
+
+.sesion{
+    line-height: 14px;
+    color: #f1f1f1;
+}
+/*---------header-----------*/
+
+
+.pag{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 768px){
+    .pag{
+        display: table;
+    } 
+    .navbar ul li{
+        width: 25%;
+    }
+}
+.contenedor{
+    flex-basis: 70%;
+    background-color: #f1f1f1;
+    
+}
+
+.navbar{
+    padding: 0;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin: 20px;
+}
+
+
+.navbar ul li{
+    width: 20%;
+    list-style: none;
+    text-align: center;
+}
+@media (max-width: 1180px){
+    .navbar ul{
+        display: table;
+    }
+    .navbar ul li{
+        padding-top: 10px;
+        width: 30%;
+    }
+    .pag{
+        display: table;
+    }
+}
+.bt-nav{
+    background-color: #0060b4;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    width: 90%;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    
+    
+}
+
+.bt-nav:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#999999+1,d6d6d6+49,c9c9c9+51,7db9e8+99 */
+    background: #999999; /* Old browsers */
+    background: -moz-linear-gradient(top,  #0060b4 1%, #d6d6d6 49%, #c9c9c9 51%, #0060b4 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #0060b4 1%,#d6d6d6 49%,#c9c9c9 51%,#0060b4 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #0060b4 1%,#d6d6d6 49%,#c9c9c9 51%,#0060b4 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.sidebar{
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+}
+
+.actual{
+    
+    margin: 0px 80px;
+}
+.actual h1{
+    margin: 12px;
+    padding: 0px;
+    margin-top: 0px;
+}
+.actualizaciones{
+    border: solid .8px #ffffff;
+    border-radius: 5px;
+}
+.actualizaciones li{
+   margin: 20px;
+}
+.overflow-auto{
+    height: 500px;
+}
+
+.pags{
+    display: block;
+    margin-left:39%;
+    margin-bottom: 30px;
+}
+/*-------contenedor---------*/
+
+.pizarron{
+    max-width: 90%;
+    text-align: center;
+    background-color: darkcyan;
+    margin: 0 auto;    
+    height: 300px;
+    margin-top: 30px;
+    font-size: 35px;
+    line-height: 88px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: solid 3px #000000;
+
+}
+.pizarron table tr td{
+    padding-top: 30px;
+}
+.pizarron table tr{
+    
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 50px;
+}
+.pizarron table tr:last-child{
+    font-size: 100px;
+}
+
+/*-----------sidebar1------------*/
+
+.sidebar2 ul li{
+    list-style: none;
+}
+
+.tiendas{ /*global para iconos app*/
+    width: 70px;
+    border-radius: 15px;
+    
+}
+
+.sidebar.sidebar2{
+    width: 100%;
+}
+.sidebar2 ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    padding-top: 100px;
+}
+.sidebar2 ul:last-child{
+    padding-top: 0px;
+}
+
+.derechos{
+    float: right;
+    padding-right: 50px;
+    padding-top: 5%;
+    font-size: 13px;
+    
+}
+
+.modal-content img{
+    max-width: 1200px;
+}

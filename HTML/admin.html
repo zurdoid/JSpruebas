@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administración</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normailize.css">
+    <link rel="stylesheet" href="/css/admin.css">
+
+</head>
+<body>
+
+        <!-----------------encabezado------------------>
+        <header class="encabezado">
+                <div class="empresa">
+                    <img src="/img/LOGO-GM.jpg" alt="Logo">
+                    <h2 class="logo">Servicios Profesionales</h2>
+                </div>
+                <div class="sesion">
+                    <p>Hola <b>Usuario</b></p>
+                    <p>Cerrar Sesión</p>
+                </div>
+        </header>
+
+
+    <h1 class="container">Administración</h1>
+    <div class="buscador container"><!---------buscador-------->
+        <ul>
+            <li>
+            <label for="">.: ID :.</label>
+            <input type="search" placeholder="ID">
+            </li>
+            
+            <li>
+            <label for="">.: Dirección :.</label>    
+            <input type="search" placeholder="Calle">
+            </li>
+        </ul>
+        <ul>
+            <li>
+            <label for="">.: Colonia :.</label>    
+            <input type="search" placeholder="Colonia">
+            </li>
+        
+            <li>
+            <label for="">.: Municipio :.</label>    
+            <input type="search" placeholder="Delegación">
+            </li> 
+        </ul>
+        <ul>
+            <li>
+            <label for="">.: Estado :.</label>    
+            <input type="search" placeholder="Estado">
+            </li>
+        
+            <li>
+            <label for="">.: Palabra Clave :.</label>    
+            <input type="search" placeholder="¿?"> 
+            </li>   
+         </ul>  
+         
+    </div>
+    <input type="submit" value="Buscar" class="bt-buscar btn btn-primary">
+
+    <!--------------Table------------------>
+    <div class="actualizar container">
+        <table class="table table-striped container tabla">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Colonia</th>
+                    <th scope="col">Vendida</th>
+                    <th socpe="col">Baja</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1234</th>
+                    <td>Letraset sheets containing Lorem Ipsum passages</td>
+                    <td>Del Valle</td>
+                    <td>
+                      <select id="opciones">
+                        <option value="" selected disabled>--Seleccione--</option>
+                        <option value="">Gayol</option>
+                        <option value="">Providencia</option>
+                      </select>
+                    </td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">23354</th>
+                    <td>Contrary to popular belief, Lorem Ipsum is not simply random text. </td>
+                    <td>Narvarte</td>
+                    <td>
+                        <select id="opciones">
+                          <option value="" selected disabled>--Seleccione--</option>
+                          <option value="">Gayol</option>
+                          <option value="">Providencia</option>
+                        </select>
+                    </td>
+                    <td><input type="checkbox"></td>                
+                  </tr>
+                  <tr>
+                    <th scope="row">33377</th>
+                    <td>Many desktop publishing packages and web page editors</td>
+                    <td>Roma</td>
+                    <td>
+                        <select id="opciones">
+                          <option value="" selected disabled>--Seleccione--</option>
+                          <option value="">Gayol</option>
+                          <option value="">Providencia</option>
+                        </select>
+                    </td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                </tbody>
+          </table>
+          <label for="comment">Comentario</label>
+          <textarea id="comment" class="comentario"></textarea>
+          <input type="submit" title="Enviar" class="enviar btn btn-primary ">
+     </div>
+</body>
+</html>

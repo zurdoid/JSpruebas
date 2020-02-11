@@ -419,7 +419,7 @@ for(let q=0; q<pendientes.length; q++){
 
 
 
-        */
+        */      /*
             //-----------------Object destructuring-----------------------
 
 const cliente = {
@@ -465,6 +465,11 @@ const metallica = {banda, genero, canciones}
 
       //--------------------- .filter   .find   .reduce----------------------
 
+
+
+
+
+
       const personas = [
           {nombre: 'Peter', edad: 20 },
           {nombre: 'juan', edad: 50 },
@@ -491,9 +496,12 @@ const metallica = {banda, genero, canciones}
 
 
       // reduce
-
       let total = personas.reduce((edadTotal, persona)=>{
           return edadTotal + persona.edad;
       }, 0);
       console.log(total);
+
+
+
+      */
 
