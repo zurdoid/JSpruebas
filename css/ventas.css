@@ -41,25 +41,12 @@ body{
         font-size: 20px;
         margin-top: 20px;
     } 
-    .encabezado img{
-        display: none;
-    }
-    .encabezado{
-        padding: 0px;
-        align-items: center;
-        max-width: 100%;
-    }
+
+
     .sesion{
         display: none;
     }
 
-}
-
-.encabezado img{
-    max-width: 15%;
-    border-radius: 8px;
-    
-    
 }
 
 .sesion{
@@ -177,6 +164,11 @@ body{
 .pags{
     display: flex;
     justify-content: center;
+}
+
+.btn-juri{
+    display: block;
+    margin: 0 auto;
 }
 /*-------contenedor---------*/
 

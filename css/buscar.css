@@ -19,22 +19,33 @@ body{
     background: -webkit-linear-gradient(top,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #006fd6 0%,#004b84 53%,#004b84 53%,#0060b4 98%,#006fd6 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006fd6', endColorstr='#006fd6',GradientType=0 ); /* IE6-9 */
-    display: flex;
-    justify-content: space-around;
+    
     padding: 20px;
     padding-bottom: 0px;
 }
-.empresa{
+.info-encabezado{
+    margin: 0 auto;
     display: flex;
-    align-items: baseline;  
+    justify-content: space-between;
+    align-items: center center;
+    max-width: 1200px;
 }
 .empresa h2{
     color: #f1f1f1;
-    font-family: 'Italianno', cursive;
-    font-size: 80px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
     padding-left: 15px;
 }
-@media (max-width: 768px){
+.empresa h2 span{
+    font-weight: bold;
+    color: rgb(128, 0, 0);
+    font-size: 65px;
+
+}
+@media (max-width: 880px){
+    .sesion{
+        display: none;
+    }
     .empresa h2{
         font-size: 50px;
         margin-top: 20px;
@@ -78,6 +89,14 @@ body{
     justify-content: space-between;
     padding: 3px;
 }
+@media (max-width: 980px){
+    .buscador ul{
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+
 .bt-buscar{
     display: block;
     margin: 0 auto;
@@ -109,7 +128,7 @@ body{
 }
 ---------------- BUSCADOR ALTERNO---------------*/
 .bd-example{
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 .img-carousel{
@@ -129,6 +148,23 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
+}
+@media(max-width: 880px){
+    .tarjetero{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    } 
+    .bd-example{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 400px){
+    .tarjetero{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: px;
+    }
+
 }
 .tarjeta{
     margin-bottom: 30px; 
