@@ -38,39 +38,39 @@
         <ul>
             <li>
             <label for="">.: ID :.</label>
-            <input type="search" placeholder="ID">
+            <input type="search" placeholder="ID" id="id">
             </li>
             
             <li>
             <label for="">.: Dirección :.</label>    
-            <input type="search" placeholder="Calle">
+            <input type="search" placeholder="Calle" id="direccion">
             </li>
         </ul>
         <ul>
             <li>
             <label for="">.: Colonia :.</label>    
-            <input type="search" placeholder="Colonia">
+            <input type="search" placeholder="Colonia" id="colonia">
             </li>
         
             <li>
             <label for="">.: Municipio :.</label>    
-            <input type="search" placeholder="Delegación">
+            <input type="search" placeholder="Delegación" id="municipio">
             </li> 
         </ul>
         <ul>
             <li>
             <label for="">.: Estado :.</label>    
-            <input type="search" placeholder="Estado">
+            <input type="search" placeholder="Estado" id="estado">
             </li>
         
             <li>
             <label for="">.: Palabra Clave :.</label>    
-            <input type="search" placeholder="¿?"> 
+            <input type="search" placeholder="¿?" id="palabra-clave"> 
             </li>   
          </ul>  
          
     </div>
-    <input type="submit" value="Buscar" class="bt-buscar btn btn-primary">
+    <input type="submit" value="Buscar" class="bt-buscar btn btn-primary" id="btn-buscar">
 
     <!--------------Table------------------>
     <div class="actualizar container">
@@ -91,9 +91,9 @@
                     <td>Del Valle</td>
                     <td>
                       <select id="opciones">
-                        <option value="" selected disabled>--Seleccione--</option>
-                        <option value="">Gayol</option>
-                        <option value="">Providencia</option>
+                        <option value="1" selected disabled>--Seleccione--</option>
+                        <option value="2">Gayol</option>
+                        <option value="3">Providencia</option>
                       </select>
                     </td>
                     <td><input type="checkbox"></td>
@@ -104,9 +104,9 @@
                     <td>Narvarte</td>
                     <td>
                         <select id="opciones">
-                          <option value="" selected disabled>--Seleccione--</option>
-                          <option value="">Gayol</option>
-                          <option value="">Providencia</option>
+                          <option value="1" selected disabled>--Seleccione--</option>
+                          <option value="2">Gayol</option>
+                          <option value="3">Providencia</option>
                         </select>
                     </td>
                     <td><input type="checkbox"></td>                
@@ -117,9 +117,9 @@
                     <td>Roma</td>
                     <td>
                         <select id="opciones">
-                          <option value="" selected disabled>--Seleccione--</option>
-                          <option value="">Gayol</option>
-                          <option value="">Providencia</option>
+                          <option value="1" selected disabled>--Seleccione--</option>
+                          <option value="2">Gayol</option>
+                          <option value="3">Providencia</option>
                         </select>
                     </td>
                     <td><input type="checkbox"></td>
@@ -128,7 +128,8 @@
           </table>
           <label for="comment">Comentario</label>
           <textarea id="comment" class="comentario"></textarea>
-          <input type="submit" title="Enviar" class="enviar btn btn-primary ">
+          <input type="submit" title="Enviar" class="enviar btn btn-primary " id="enviar-admin">
      </div>
+     <script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html>
